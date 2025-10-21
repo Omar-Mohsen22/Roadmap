@@ -1,0 +1,1242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backend Developer Roadmap - Complete Guide</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 3px solid #667eea;
+        }
+        
+        .header h1 {
+            color: #667eea;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            color: #666;
+            font-size: 1.1em;
+        }
+        
+        .phase {
+            margin-bottom: 40px;
+            page-break-inside: avoid;
+        }
+        
+        .phase-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        
+        .phase-header h2 {
+            font-size: 1.8em;
+            margin-bottom: 5px;
+        }
+        
+        .phase-header .duration {
+            font-size: 0.9em;
+            opacity: 0.9;
+        }
+        
+        .section {
+            margin-bottom: 20px;
+            padding: 15px;
+            background: #f8f9fa;
+            border-left: 4px solid #667eea;
+            border-radius: 5px;
+        }
+        
+        .section h3 {
+            color: #764ba2;
+            margin-bottom: 10px;
+            font-size: 1.3em;
+        }
+        
+        .section ul {
+            margin-left: 20px;
+            list-style: none;
+        }
+        
+        .section li {
+            margin-bottom: 8px;
+            color: #333;
+            position: relative;
+            padding-left: 30px;
+        }
+        
+        .section li:before {
+            content: '☐';
+            position: absolute;
+            left: 0;
+            font-size: 1.2em;
+            color: #667eea;
+        }
+        
+        .resource {
+            background: white;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #e0e0e0;
+        }
+        
+        .resource-title {
+            font-weight: bold;
+            color: #667eea;
+            margin-bottom: 5px;
+        }
+        
+        .resource-link {
+            color: #764ba2;
+            text-decoration: none;
+            font-size: 0.9em;
+            word-break: break-all;
+        }
+        
+        .resource-link:hover {
+            text-decoration: underline;
+        }
+        
+        .kpi-box {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+        
+        .kpi-box h4 {
+            color: #856404;
+            margin-bottom: 10px;
+        }
+        
+        .kpi-box ul {
+            list-style: none;
+        }
+        
+        .kpi-box li {
+            position: relative;
+            padding-left: 30px;
+        }
+        
+        .kpi-box li:before {
+            content: '☐';
+            position: absolute;
+            left: 0;
+            font-size: 1.2em;
+            color: #ffc107;
+        }
+
+        .arabic-channels {
+            background: #e3f2fd;
+            border-left: 4px solid #2196F3;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+
+        .arabic-channels h4 {
+            color: #1565C0;
+            margin-bottom: 10px;
+        }
+        
+        .btn-download {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+            cursor: pointer;
+            display: block;
+            margin: 30px auto;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+            transition: transform 0.2s;
+        }
+        
+        .btn-download:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+        }
+
+        .channels-section {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 30px 0;
+        }
+
+        .channels-section h2 {
+            font-size: 1.8em;
+            margin-bottom: 15px;
+        }
+        
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            
+            .container {
+                box-shadow: none;
+            }
+            
+            .btn-download {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🚀 Backend Developer Roadmap</h1>
+            <p>Complete 26-Week Guide with Resources & KPIs</p>
+            <p style="font-size: 0.9em; color: #999; margin-top: 10px;">ASD Support App Backend Development</p>
+        </div>
+
+        <button class="btn-download" onclick="window.print()">📥 Download as PDF</button>
+
+        <!-- RECOMMENDED ARABIC CHANNELS -->
+        <!-- <div class="channels-section">
+            <h2>📺 قنوات يوتيوب عربية موصى بها</h2>
+            <div class="resource">
+                <div class="resource-title">🎓 Elzero Web School - أكاديمية الزيرو</div>
+                <a href="https://www.youtube.com/@ElzeroWebSchool" class="resource-link" target="_blank">https://www.youtube.com/@ElzeroWebSchool</a>
+                <p style="margin-top: 5px; color: #666;">محتوى شامل في البرمجة والتطوير باللغة العربية</p>
+            </div>
+
+            <div class="resource">
+                <div class="resource-title">🎓 Codezilla - كودزيلا</div>
+                <a href="https://www.youtube.com/@Codezilla" class="resource-link" target="_blank">https://www.youtube.com/@Codezilla</a>
+                <p style="margin-top: 5px; color: #666;">شروحات برمجية متقدمة وعملية</p>
+            </div>
+
+            <div class="resource">
+                <div class="resource-title">🎓 TheNewBaghdad - بغداد الجديدة</div>
+                <a href="https://www.youtube.com/@TheNewBaghdad" class="resource-link" target="_blank">https://www.youtube.com/@TheNewBaghdad</a>
+                <p style="margin-top: 5px; color: #666;">دورات شاملة في تطوير الويب والبرمجة</p>
+            </div>
+
+            <div class="resource">
+                <div class="resource-title">🎓 Muhammed Essa - محمد عيسى</div>
+                <a href="https://www.youtube.com/@muhammedessa" class="resource-link" target="_blank">https://www.youtube.com/@muhammedessa</a>
+                <p style="margin-top: 5px; color: #666;">تعليم البرمجة والذكاء الاصطناعي</p>
+            </div>
+
+            <div class="resource">
+                <div class="resource-title">🎓 Algorithm Academy - أكاديمية الخوارزميات</div>
+                <a href="https://www.youtube.com/@algorithm.academy" class="resource-link" target="_blank">https://www.youtube.com/@algorithm.academy</a>
+                <p style="margin-top: 5px; color: #666;">شروحات مبسطة في البرمجة وعلوم الحاسب</p>
+            </div>
+
+            <div class="resource">
+                <div class="resource-title">🎓 Hassouna Academy - أكاديمية حسونة</div>
+                <a href="https://www.youtube.com/@HassounaAcademy" class="resource-link" target="_blank">https://www.youtube.com/@HassounaAcademy</a>
+                <p style="margin-top: 5px; color: #666;">دورات عملية في تطوير التطبيقات</p>
+            </div>
+        </div> -->
+
+        <!-- PHASE 1 -->
+        <div class="phase">
+            <div class="phase-header" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                <h2>📚 Phase 1: Foundation</h2>
+                <div class="duration">Weeks 1-3 | Duration: 3 weeks</div>
+            </div>
+
+            <div class="section">
+                <h3>🎯 Objectives</h3>
+                <ul>
+                    <li>Master Python programming fundamentals</li>
+                    <li>Understand HTTP protocol and REST API principles</li>
+                    <li>Learn version control with Git and GitHub</li>
+                </ul>
+            </div>
+
+            <div class="kpi-box">
+                <h4>📊 Key Performance Indicators (KPIs)</h4>
+                <ul>
+                    <li>Complete 50+ coding exercises on Python basics</li>
+                    <li>Build 2 small CLI applications</li>
+                    <li>Create 5+ Git repositories with proper commit history</li>
+                    <li>Score 80%+ on Python fundamentals quiz</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h3>✅ Week 1: Python Fundamentals</h3>
+                <ul>
+                    <li>Data types, variables, and operators</li>
+                    <li>Control flow (if/else, loops)</li>
+                    <li>Functions and modules</li>
+                    <li>OOP: Classes, inheritance, polymorphism</li>
+                    <li>Exception handling</li>
+                    <li>File I/O operations</li>
+                    <li>Async/await basics</li>
+                </ul>
+
+                <div class="arabic-channels">
+                    <h4>📺 مصدر عربي موصى به</h4>
+                    <div class="resource">
+                        <div class="resource-title">Elzero - دورة بايثون كاملة</div>
+                        <a href="https://www.youtube.com/playlist?list=PLDoPjvoNmBAyE_gei5d18qkfIe-Z8mocs" class="resource-link" target="_blank">https://www.youtube.com/playlist?list=PLDoPjvoNmBAyE_gei5d18qkfIe-Z8mocs</a>
+                    </div>
+                </div>
+
+                <div class="resource">
+                    <div class="resource-title">📚 Python Tutorial</div>
+                    <a href="https://www.w3schools.com/python/default.asp" class="resource-link" target="_blank">https://www.w3schools.com/python/default.asp</a>
+                </div>
+
+                <div class="resource">
+                    <div class="resource-title">📚 Real Python - Python Basics</div>
+                    <a href="https://realpython.com/learning-paths/python3-introduction/" class="resource-link" target="_blank">https://realpython.com/learning-paths/python3-introduction/</a>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3>✅ Week 2: HTTP & REST APIs</h3>
+                <ul>
+                    <li>HTTP methods (GET, POST, PUT, DELETE, PATCH)</li>
+                    <li>Status codes and headers</li>
+                    <li>REST API design principles</li>
+                    <li>JSON data format</li>
+                    <li>API authentication basics</li>
+                    <li>Using requests library</li>
+                </ul>
+
+                <div class="arabic-channels">
+                    <h4>📺 مصدر عربي موصى به</h4>
+                    <div class="resource">
+                        <div class="resource-title">شرح REST API</div>
+                        <a href="https://www.youtube.com/watch?v=WiwR0Cgzuww&t=5s" class="resource-link" target="_blank">https://www.youtube.com/watch?v=WiwR0Cgzuww&t=5s</a>
+                    </div>
+                </div>
+
+                <div class="resource">
+                    <div class="resource-title">📺 REST API Crash Course</div>
+                    <a href="https://www.youtube.com/watch?v=qbLc5a9jdXo" class="resource-link" target="_blank">https://www.youtube.com/watch?v=qbLc5a9jdXo</a>
+                </div>
+
+                <div class="resource">
+                    <div class="resource-title">📚 RESTful API Design Guide</div>
+                    <a href="https://restfulapi.net/" class="resource-link" target="_blank">https://restfulapi.net/</a>
+                </div>
+                <div class="resource">
+                    <div class="resource-title">📚 Learn REST API Design</div>
+                    <a href="https://restapitutorial.com/" class="resource-link" target="_blank">https://restapitutorial.com/</a>
+                </div>
+                
+            </div>
+
+            <div class="section">
+                <h3>✅ Week 3: Git & Version Control</h3>
+                <ul>
+                    <li>Git basics: init, add, commit, push, pull</li>
+                    <li>Branching and merging strategies</li>
+                    <li>Pull requests and code reviews</li>
+                    <li>GitHub/GitLab workflows</li>
+                    <li>Resolving merge conflicts</li>
+                    <li>.gitignore and best practices</li>
+                </ul>
+
+                <div class="arabic-channels">
+                    <h4>📺 مصدر عربي موصى به</h4>
+                    <div class="resource">
+                        <div class="resource-title">Elzero - دورة Git & GitHub</div>
+                        <a href="https://www.youtube.com/playlist?list=PLDoPjvoNmBAw4eOj58MZPakHjaO3frVMF" class="resource-link" target="_blank">https://www.youtube.com/playlist?list=PLDoPjvoNmBAw4eOj58MZPakHjaO3frVMF</a>
+                    </div>
+                </div>
+
+                <div class="resource">
+                    <div class="resource-title">📺 Git and GitHub for Beginners (1 hour)</div>
+                    <a href="https://www.youtube.com/watch?v=RGOj5yH7evk" class="resource-link" target="_blank">https://www.youtube.com/watch?v=RGOj5yH7evk</a>
+                </div>
+
+                <div class="resource">
+                    <div class="resource-title">📚 Atlassian Git Tutorial</div>
+                    <a href="https://www.atlassian.com/git/tutorials" class="resource-link" target="_blank">https://www.atlassian.com/git/tutorials</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- PHASE 2 -->
+        <div class="phase">
+            <div class="phase-header" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                <h2>🚀 Phase 2: FastAPI Mastery</h2>
+                <div class="duration">Weeks 4-6 | Duration: 3 weeks</div>
+            </div>
+
+            <div class="section">
+                <h3>🎯 Objectives</h3>
+                <ul>
+                    <li>Build production-ready APIs with FastAPI</li>
+                    <li>Master Pydantic for data validation</li>
+                    <li>Implement comprehensive testing strategies</li>
+                </ul>
+            </div>
+
+            <div class="kpi-box">
+                <h4>📊 Key Performance Indicators (KPIs)</h4>
+                <ul>
+                    <li>Build 3 complete CRUD APIs</li>
+                    <li>Achieve 80%+ test coverage</li>
+                    <li>Response time under 100ms for simple endpoints</li>
+                    <li>Pass all Pydantic validation tests</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h3>✅ Week 4: FastAPI Basics</h3>
+                <ul>
+                    <li>FastAPI installation and setup</li>
+                    <li>Path operations and routing</li>
+                    <li>Request/response models with Pydantic</li>
+                    <li>Query parameters and path parameters</li>
+                    <li>Request body validation</li>
+                    <li>Building CRUD operations</li>
+                </ul>
+
+                <div class="arabic-channels">
+                    <h4>📺 مصدر عربي موصى به</h4>
+                    <div class="resource">
+                        <div class="resource-title">FastAPI بالعربي</div>
+                        <a href="https://www.youtube.com/watch?v=yvyKtJVVIdk&list=PLGbzY-VLUfcpzhB-iyGvju-NMMez_NNP9" class="resource-link" target="_blank">https://www.youtube.com/</a>
+                    </div>
+                </div>
+
+                <div class="resource">
+                    <div class="resource-title">📺 FastAPI Course </div>
+                    <a href="https://www.youtube.com/watch?v=ytNSjAnH2BQ&list=PLYymOhvP9Z6_mVLPKEHh8QY3MFUutF70U&index=1" class="resource-link" target="_blank">https://www.youtube.com/watch?v=0sOvCWFmrtA</a>
+                </div>
+
+                <div class="resource">
+                    <div class="resource-title">📺 FastAPI Course </div>
+                    <a href="https://www.youtube.com/watch?v=XnYYwcOfcn8&list=PLqAmigZvYxIL9dnYeZEhMoHcoP4zop8-p" class="resource-link" target="_blank">https://www.youtube.com/watch?v=0sOvCWFmrtA</a>
+                </div>
+
+
+                <div class="resource">
+                    <div class="resource-title">📚 FastAPI Official Documentation</div>
+                    <a href="https://fastapi.tiangolo.com/tutorial/" class="resource-link" target="_blank">https://fastapi.tiangolo.com/tutorial/</a>
+                </div>
+
+                <div class="resource">
+                    <div class="resource-title">📚 FastAPI Tutorial </div>
+                    <a href="https://www.tutorialspoint.com/fastapi/index.htm" class="resource-link" target="_blank">https://www.tutorialspoint.com/fastapi/index.htm</a>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3>✅ Week 5: Advanced FastAPI</h3>
+                <ul>
+                    <li>Dependency injection system</li>
+                    <li>Middleware and CORS configuration</li>
+                    <li>Background tasks</li>
+                    <li>File uploads and handling</li>
+                    <li>Error handling and custom exceptions</li>
+                    <li>API documentation with Swagger UI</li>
+                </ul>
+
+                <div class="resource">
+                    <div class="resource-title">📺 Advanced FastAPI Techniques (3 hours)</div>
+                    <a href="https://www.youtube.com/watch?v=SORiTsvnU28" class="resource-link" target="_blank">https://www.youtube.com/watch?v=SORiTsvnU28</a>
+                </div>
+
+                <div class="resource">
+                    <div class="resource-title">📚 FastAPI Best Practices Guide</div>
+                    <a href="https://github.com/zhanymkanov/fastapi-best-practices" class="resource-link" target="_blank">https://github.com/zhanymkanov/fastapi-best-practices</a>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3>✅ Week 6: Testing with Pytest</h3>
+                <ul>
+                    <li>Pytest fundamentals</li>
+                    <li>FastAPI TestClient</li>
+                    <li>Fixtures and mocking</li>
+                    <li>Testing async endpoints</li>
+                    <li>Code coverage with pytest-cov</li>
+                    <li>Integration testing</li>
+                </ul>
+
+                <div class="resource">
+                    <div class="resource-title">📺 Pytest Tutorial </div>
+                    <a href="https://www.youtube.com/watch?v=7qDuqwRYEhI&t=30s" class="resource-link" target="_blank">https://www.youtube.com/watch?v=cHYq1MRoyI0</a>
+                </div>
+
+                <div class="resource">
+                    <div class="resource-title">📺 Pytest Tutorial </div>
+                    <a href="https://www.youtube.com/watch?v=y_j4TqS-I6A&t=207s" class="resource-link" target="_blank">https://www.youtube.com/watch?v=y_j4TqS-I6A&t=207s</a>
+                </div>
+
+                <div class="resource">
+                    <div class="resource-title">📚 Pytest Documentation</div>
+                    <a href="https://docs.pytest.org/en/stable/getting-started.html" class="resource-link" target="_blank">https://docs.pytest.org/en/stable/getting-started.html</a>
+                </div>
+
+                <div class="resource">
+                    <div class="resource-title">📚 Pytest Tutorial</div>
+                    <a href="https://www.tutorialspoint.com/pytest/index.htm" class="resource-link" target="_blank">https://www.tutorialspoint.com/pytest/index.htm</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- PHASE 3 -->
+        <div class="phase">
+            <div class="phase-header" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                <h2>🗄️ Phase 3: Database Management</h2>
+                <div class="duration">Weeks 7-9 | Duration: 3 weeks</div>
+            </div>
+
+            <div class="section">
+                <h3>🎯 Objectives</h3>
+                <ul>
+                    <li>Design and implement relational databases</li>
+                    <li>Master SQLAlchemy ORM</li>
+                    <li>Handle database migrations</li>
+                </ul>
+            </div>
+
+            <div class="kpi-box">
+                <h4>📊 Key Performance Indicators (KPIs)</h4>
+                <ul>
+                    <li>Design 3+ normalized database schemas</li>
+                    <li>Write 50+ SQL queries with joins</li>
+                    <li>Complete 10+ database migrations</li>
+                    <li>Query performance under 50ms for indexed queries</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h3>✅ Week 7: PostgreSQL</h3>
+                <ul>
+                    <li>PostgreSQL installation and setup</li>
+                    <li>Database design and normalization</li>
+                    <li>SQL queries: SELECT, INSERT, UPDATE, DELETE</li>
+                    <li>JOINs (INNER, LEFT, RIGHT, FULL)</li>
+                    <li>Indexes and query optimization</li>
+                    <li>Transactions and ACID properties</li>
+                </ul>
+
+                <div class="arabic-channels">
+                    <h4>📺 مصدر عربي موصى به</h4>
+                    <div class="resource">
+                        <div class="resource-title">Elzero - دورة SQL كاملة</div>
+                        <a href="https://www.youtube.com/playlist?list=PLDoPjvoNmBAz6DT8SzQ1CODJTH-NIA7R9" class="resource-link" target="_blank">https://www.youtube.com/playlist?list=PLDoPjvoNmBAz6DT8SzQ1CODJTH-NIA7R9</a>
+                    </div>
+                </div>
+
+                <div class="resource">
+                    <div class="resource-title">📚 MySQL Tutorial</div>
+                    <a href="https://www.w3schools.com/mysql/" class="resource-link" target="_blank">https://www.w3schools.com/mysql/</a>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3>✅ Week 8: SQLAlchemy ORM</h3>
+                <ul>
+                    <li>SQLAlchemy Core vs ORM</li>
+                    <li>Defining models and relationships</li>
+                    <li>One-to-many and many-to-many relationships</li>
+                    <li>Query API and filtering</li>
+                    <li>Alembic for database migrations</li>
+                    <li>Session management</li>
+                </ul>
+
+                <div class="resource">
+                    <div class="resource-title">📺 SQLAlchemy ORM Tutorial (2 hours)</div>
+                    <a href="https://www.youtube.com/watch?v=AKQ3XEDI9Mw" class="resource-link" target="_blank">https://www.youtube.com/watch?v=AKQ3XEDI9Mw</a>
+                </div>
+
+                <div class="resource">
+                    <div class="resource-title">📚 SQLAlchemy Documentation</div>
+                    <a href="https://docs.sqlalchemy.org/en/20/tutorial/" class="resource-link" target="_blank">https://docs.sqlalchemy.org/en/20/tutorial/</a>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3>✅ Week 9: FastAPI + Database Integration</h3>
+                <ul>
+                    <li>Async database operations</li>
+                    <li>Database dependency injection</li>
+                    <li>Repository pattern implementation</li>
+                    <li>Connection pooling</li>
+                    <li>Error handling for database operations</li>
+                    <li>Optimizing database queries</li>
+                </ul>
+
+                <div class="resource">
+                    <div class="resource-title">📺 FastAPI with Databases </div>
+                    <a href="https://www.youtube.com/watch?v=zzOwU41UjTM&t=277s" class="resource-link" target="_blank">https://www.youtube.com/watch?v=zzOwU41UjTM&t=277s</a>
+                </div>
+
+                <div class="resource">
+                    <div class="resource-title">📚 FastAPI SQL Databases Guide</div>
+                    <a href="https://fastapi.tiangolo.com/tutorial/sql-databases/" class="resource-link" target="_blank">https://fastapi.tiangolo.com/tutorial/sql-databases/</a>
+                </div>
+            </div></li>
+                </ul>
+
+                <div class="resource">
+                    <div class="resource-title">📺 FastAPI with SQL by Amigoscode</div>
+                    <a href="https://www.youtube.com/watch?v=xq1Snezb1rs" class="resource-link" target="_blank">https://www.youtube.com/watch?v=xq1Snezb1rs</a>
+                </div>
+
+                <div class="resource">
+                    <div class="resource-title">📚 FastAPI SQL Databases Tutorial</div>
+                    <a href="https://fastapi.tiangolo.com/tutorial/sql-databases/" class="resource-link" target="_blank">https://fastapi.tiangolo.com/tutorial/sql-databases/</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- PHASE 4 -->
+        <div class="phase">
+            <div class="phase-header" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+                <h2>🔐 Phase 4: Authentication & Security</h2>
+                <div class="duration">Weeks 10-11 | Duration: 2 weeks</div>
+            </div>
+
+            <div class="section">
+                <h3>🎯 Objectives</h3>
+                <ul>
+                    <li>Implement secure JWT authentication</li>
+                    <li>Master OAuth2 and authorization</li>
+                    <li>Apply security best practices</li>
+                </ul>
+            </div>
+
+            <div class="kpi-box">
+                <h4>📊 Key Performance Indicators (KPIs)</h4>
+                <ul>
+                    <li>Implement full auth system with JWT</li>
+                    <li>Pass OWASP security checklist</li>
+                    <li>Zero security vulnerabilities in code scan</li>
+                    <li>Implement role-based access control</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h3>✅ Week 10: JWT Authentication</h3>
+                <ul>
+                    <li>Password hashing with bcrypt</li>
+                    <li>JWT token generation and validation</li>
+                    <li>Access and refresh tokens</li>
+                    <li>User registration and login</li>
+                    <li>Password reset functionality</li>
+                    <li>Token blacklisting</li>
+                </ul>
+
+                <div class="arabic-channels">
+                
+                    <div class="resource">
+                        <div class="resource-title"> JWT Authentication Tutorial</div>
+                        <a href="https://www.youtube.com/watch?v=7Q17ubqLfaM" class="resource-link" target="_blank">https://www.youtube.com/watch?v=7Q17ubqLfaM</a>
+                    </div>
+                </div>
+
+        
+
+                <div class="resource">
+                    <div class="resource-title">📺 FastAPI JWT Authentication by Tech With Tim</div>
+                    <a href="https://www.youtube.com/watch?v=0_seNFCtglk" class="resource-link" target="_blank">https://www.youtube.com/watch?v=0_seNFCtglk</a>
+                </div>
+
+                <div class="resource">
+                    <div class="resource-title">📚 JWT.io - Introduction to JWT</div>
+                    <a href="https://jwt.io/introduction" class="resource-link" target="_blank">https://jwt.io/introduction</a>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3>✅ Week 11: OAuth2 & Security</h3>
+                <ul>
+                    <li>OAuth2 flow implementation</li>
+                    <li>Social login (Google, Facebook)</li>
+                    <li>Role-based access control (RBAC)</li>
+                    <li>API rate limiting</li>
+                    <li>HTTPS and SSL/TLS</li>
+                    <li>Security headers and CORS</li>
+                    <li>Input validation and sanitization</li>
+                </ul>
+
+                <div class="resource">
+                    <div class="resource-title">📺 OAuth 2.0 Explained</div>
+                    <a href="https://www.youtube.com/watch?v=996OiexHze0" class="resource-link" target="_blank">https://www.youtube.com/watch?v=996OiexHze0</a>
+                </div>
+
+                <div class="resource">
+                    <div class="resource-title">📺 API Authentication EXPLAINED! </div>
+                    <a href="https://www.youtube.com/watch?v=GcVtElYa17s" class="resource-link" target="_blank">https://www.youtube.com/watch?v=GcVtElYa17s</a>
+                </div>
+
+                <div class="resource">
+                    <div class="resource-title">📺 Tips For API Security</div>
+                    <a href="https://www.youtube.com/watch?v=6WZ6S-qmtqY" class="resource-link" target="_blank">https://www.youtube.com/watch?v=6WZ6S-qmtqY</a>
+                </div>
+
+                <div class="resource">
+                    <div class="resource-title">📺 API Security Best Practices</div>
+                    <a href="https://www.youtube.com/watch?v=CTbE8iJmZ7U" class="resource-link" target="_blank">https://www.youtube.com/watch?v=CTbE8iJmZ7U</a>
+                </div>
+
+                <div class="resource">
+                    <div class="resource-title">📚 OWASP Top 10 Security Risks</div>
+                    <a href="https://owasp.org/www-project-top-ten/" class="resource-link" target="_blank">https://owasp.org/www-project-top-ten/</a>
+                </div>
+
+                <div class="resource">
+                    <div class="resource-title">📚 Best Practices for API Security</div>
+                    <a href="https://www.geeksforgeeks.org/blogs/api-security-best-practices/" class="resource-link" target="_blank">https://www.geeksforgeeks.org/blogs/api-security-best-practices/</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- PHASE 5 -->
+        <div class="phase">
+            <div class="phase-header" style="background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);">
+                <h2>☁️ Phase 5: Cloud Services Integration</h2>
+                <div class="duration">Weeks 12-13 | Duration: 2 weeks</div>
+            </div>
+
+            <div class="section">
+                <h3>🎯 Objectives</h3>
+                <ul>
+                    <li>Integrate cloud storage services</li>
+                    <li>Implement push notifications</li>
+                    <li>Set up real-time features</li>
+                </ul>
+            </div>
+
+            <div class="kpi-box">
+                <h4>📊 Key Performance Indicators (KPIs)</h4>
+                <ul>
+                    <li>Successfully upload/download files from cloud storage</li>
+                    <li>Implement push notifications to mobile devices</li>
+                    <li>Build 1 real-time feature (optional WebSocket)</li>
+                    <li>Handle 1000+ concurrent file operations</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h3>✅ Week 12: File Storage (AWS S3 / Firebase)</h3>
+                <ul>
+                    <li>AWS S3 or Firebase Storage setup</li>
+                    <li>File upload and download</li>
+                    <li>Presigned URLs</li>
+                    <li>Image processing and optimization</li>
+                    <li>CDN integration</li>
+                    <li>Storage security and access control</li>
+                </ul>
+
+                <div class="arabic-channels">
+                    <h4>📺 searchs Firebase</h4>
+                    <div class="resource">
+                        <div class="resource-title">Firebase</div>
+                        <a>How to use Firebase in (python, flutter, fastapi, ...)</a>
+                    </div>
+                </div>
+
+                <div class="resource">
+                    <div class="resource-title">📺 AWS S3 Tutorial for Beginners</div>
+                    <a href="https://www.youtube.com/watch?v=XGcoeEyt2UM" class="resource-link" target="_blank">https://www.youtube.com/watch?v=XGcoeEyt2UM</a>
+                </div>
+
+                <div class="resource">
+                    <div class="resource-title">📺 Firebase Storage Tutorial</div>
+                    <a href="https://www.youtube.com/watch?v=YOAeBSCkArA" class="resource-link" target="_blank">https://www.youtube.com/watch?v=YOAeBSCkArA</a>
+                </div>
+
+                <div class="resource">
+                    <div class="resource-title">📚 Boto3 Documentation (AWS SDK)</div>
+                    <a href="https://boto3.amazonaws.com/v1/documentation/api/latest/index.html" class="resource-link" target="_blank">https://boto3.amazonaws.com/v1/documentation/api/latest/index.html</a>
+                </div>
+
+                <div class="resource">
+                    <div class="resource-title">📚 Firebase Tutorial</div>
+                    <a href="https://www.tutorialspoint.com/firebase/index.htm" class="resource-link" target="_blank">https://www.tutorialspoint.com/firebase/index.htm</a>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3>✅ Week 13: Real-time Features</h3>
+                <ul>
+                    <li>Push notifications with Firebase Cloud Messaging</li>
+                    <li>WebSocket basics (optional)</li>
+                    <li>Real-time data updates</li>
+                    <li>Background task queues (Celery)</li>
+                    <li>Email notifications</li>
+                    <li>SMS integration (Twilio)</li>
+                </ul>
+
+                <div class="resource">
+                    <div class="resource-title">📺 Firebase Cloud Messaging Tutorial</div>
+                    <a href="https://www.youtube.com/watch?v=sioEY4_mRWY" class="resource-link" target="_blank">https://www.youtube.com/watch?v=sioEY4_mRWY</a>
+                </div>
+
+                <div class="resource">
+                    <div class="resource-title">📺 WebSockets in FastAPI by Tech With Tim</div>
+                    <a href="https://www.youtube.com/watch?v=9pO2HmLT6P8" class="resource-link" target="_blank">https://www.youtube.com/watch?v=9pO2HmLT6P8</a>
+                </div>
+
+                <div class="resource">
+                    <div class="resource-title">📚 Firebase Admin SDK for Python</div>
+                    <a href="https://firebase.google.com/docs/admin/setup" class="resource-link" target="_blank">https://firebase.google.com/docs/admin/setup</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- PHASE 6 -->
+        <div class="phase">
+            <div class="phase-header" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);">
+                <h2>🤖 Phase 6: AI Integration</h2>
+                <div class="duration">Weeks 14-16 | Duration: 3 weeks</div>
+            </div>
+
+            <div class="section">
+                <h3>🎯 Objectives</h3>
+                <ul>
+                    <li>Deploy ML models in production</li>
+                    <li>Integrate NLP capabilities</li>
+                    <li>Implement computer vision features</li>
+                </ul>
+            </div>
+
+            <div class="kpi-box">
+                <h4>📊 Key Performance Indicators (KPIs)</h4>
+                <ul>
+                    <li>Deploy 3+ ML models successfully</li>
+                    <li>Achieve 95%+ model accuracy</li>
+                    <li>API response time under 500ms for AI endpoints</li>
+                    <li>Handle 100+ concurrent AI requests</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h3>✅ Week 14: ML Model Deployment</h3>
+                <ul>
+                    <li>Loading pre-trained models</li>
+                    <li>Model serialization (pickle, joblib)</li>
+                    <li>API design for ML endpoints</li>
+                    <li>Model versioning</li>
+                    <li>Performance optimization</li>
+                    <li>Error handling for predictions</li>
+                </ul>
+
+                <div class="arabic-channels">
+                    <h4>📺 قنوات عربية موصى بها</h4>
+                    <div class="resource">
+                        <div class="resource-title">Muhammed Essa - Machine Learning</div>
+                        <a href="https://www.youtube.com/@muhammedessa" class="resource-link" target="_blank">https://www.youtube.com/@muhammedessa</a>
+                    </div>
+                </div>
+
+                <div class="resource">
+                    <div class="resource-title">📺 Deploy ML Model with FastAPI</div>
+                    <a href="https://www.youtube.com/watch?v=1zMQBe0l1bM" class="resource-link" target="_blank">https://www.youtube.com/watch?v=1zMQBe0l1bM</a>
+                </div>
+
+                <div class="resource">
+                    <div class="resource-title">📺 Machine Learning Model Deployment by Amigoscode</div>
+                    <a href="https://www.youtube.com/@amigoscode" class="resource-link" target="_blank">https://www.youtube.com/@amigoscode</a>
+                </div>
+
+                <div class="resource">
+                    <div class="resource-title">📚 Scikit-learn Model Persistence</div>
+                    <a href="https://scikit-learn.org/stable/model_persistence.html" class="resource-link" target="_blank">https://scikit-learn.org/stable/model_persistence.html</a>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3>✅ Week 15: NLP Integration</h3>
+                <ul>
+                    <li>Text preprocessing and tokenization</li>
+                    <li>Sentiment analysis</li>
+                    <li>Named entity recognition</li>
+                    <li>Social context analysis for ASD support</li>
+                    <li>Integration with Hugging Face models</li>
+                    <li>Text classification APIs</li>
+                </ul>
+
+                <div class="resource">
+                    <div class="resource-title">📺 NLP with Python - Full Course</div>
+                    <a href="https://www.youtube.com/watch?v=fNxaJsNG3-s" class="resource-link" target="_blank">https://www.youtube.com/watch?v=fNxaJsNG3-s</a>
+                </div>
+
+                <div class="resource">
+                    <div class="resource-title">📺 Hugging Face Transformers Tutorial</div>
+                    <a href="https://www.youtube.com/watch?v=QEaBAZQCtwE" class="resource-link" target="_blank">https://www.youtube.com/watch?v=QEaBAZQCtwE</a>
+                </div>
+
+                <div class="resource">
+                    <div class="resource-title">📚 Hugging Face Documentation</div>
+                    <a href="https://huggingface.co/docs" class="resource-link" target="_blank">https://huggingface.co/docs</a>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3>✅ Week 16: Computer Vision</h3>
+                <ul>
+                    <li>Image processing with OpenCV</li>
+                    <li>Facial expression recognition</li>
+                    <li>Object detection APIs</li>
+                    <li>Image classification</li>
+                    <li>Integration with TensorFlow/PyTorch</li>
+                    <li>Real-time video processing</li>
+                </ul>
+
+                <div class="resource">
+                    <div class="resource-title">📺 OpenCV Python Tutorial</div>
+                    <a href="https://www.youtube.com/watch?v=oXlwWbU8l2o" class="resource-link" target="_blank">https://www.youtube.com/watch?v=oXlwWbU8l2o</a>
+                </div>
+
+                <div class="resource">
+                    <div class="resource-title">📺 Computer Vision with Deep Learning</div>
+                    <a href="https://www.youtube.com/watch?v=YQgbDDSMHMw" class="resource-link" target="_blank">https://www.youtube.com/watch?v=YQgbDDSMHMw</a>
+                </div>
+
+                <div class="resource">
+                    <div class="resource-title">📚 OpenCV Documentation</div>
+                    <a href="https://docs.opencv.org/" class="resource-link" target="_blank">https://docs.opencv.org/</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- PHASE 7 -->
+        <div class="phase">
+            <div class="phase-header" style="background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);">
+                <h2>🚢 Phase 7: Deployment & DevOps</h2>
+                <div class="duration">Weeks 17-18 | Duration: 2 weeks</div>
+            </div>
+
+            <div class="section">
+                <h3>🎯 Objectives</h3>
+                <ul>
+                    <li>Containerize applications with Docker</li>
+                    <li>Deploy to cloud platforms</li>
+                    <li>Set up CI/CD pipelines</li>
+                </ul>
+            </div>
+
+            <div class="kpi-box">
+                <h4>📊 Key Performance Indicators (KPIs)</h4>
+                <ul>
+                    <li>Successfully containerize entire application</li>
+                    <li>Deploy to production environment</li>
+                    <li>Set up automated deployment pipeline</li>
+                    <li>Achieve 99.9% uptime</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h3>✅ Week 17: Docker & Containerization</h3>
+                <ul>
+                    <li>Docker installation and basics</li>
+                    <li>Writing Dockerfiles</li>
+                    <li>Docker Compose for multi-container apps</li>
+                    <li>Container networking</li>
+                    <li>Volume management</li>
+                    <li>Docker best practices</li>
+                </ul>
+
+                <div class="arabic-channels">
+                    <h4>📺 قنوات عربية موصى بها</h4>
+                    <div class="resource">
+                        <div class="resource-title">Elzero - دورة Docker</div>
+                        <a href="https://www.youtube.com/playlist?list=PLDoPjvoNmBAyZRFFbO9YLNdQXX0uxK4bL" class="resource-link" target="_blank">https://www.youtube.com/playlist?list=PLDoPjvoNmBAyZRFFbO9YLNdQXX0uxK4bL</a>
+                    </div>
+                </div>
+
+                <div class="resource">
+                    <div class="resource-title">📺 Docker Tutorial for Beginners - Full Course</div>
+                    <a href="https://www.youtube.com/watch?v=pTFZFxd4hOI" class="resource-link" target="_blank">https://www.youtube.com/watch?v=pTFZFxd4hOI</a>
+                </div>
+
+                <div class="resource">
+                    <div class="resource-title">📺 Docker Compose Tutorial by Tech With Tim</div>
+                    <a href="https://www.youtube.com/watch?v=DM65_JyGxCo" class="resource-link" target="_blank">https://www.youtube.com/watch?v=DM65_JyGxCo</a>
+                </div>
+
+                <div class="resource">
+                    <div class="resource-title">📚 Docker Official Documentation</div>
+                    <a href="https://docs.docker.com/" class="resource-link" target="_blank">https://docs.docker.com/</a>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3>✅ Week 18: Cloud Deployment</h3>
+                <ul>
+                    <li>Cloud platform selection (Render, Railway, Heroku)</li>
+                    <li>Environment variables and secrets</li>
+                    <li>Production configuration</li>
+                    <li>Database migration to cloud</li>
+                    <li>Domain and SSL setup</li>
+                    <li>Monitoring and logging</li>
+                </ul>
+
+                <div class="resource">
+                    <div class="resource-title">📺 Deploy FastAPI to Render</div>
+                    <a href="https://www.youtube.com/watch?v=0sOvCWFmrtA" class="resource-link" target="_blank">https://www.youtube.com/watch?v=0sOvCWFmrtA</a>
+                </div>
+
+                <div class="resource">
+                    <div class="resource-title">📺 Deployment Best Practices by Amigoscode</div>
+                    <a href="https://www.youtube.com/@amigoscode" class="resource-link" target="_blank">https://www.youtube.com/@amigoscode</a>
+                </div>
+
+                <div class="resource">
+                    <div class="resource-title">📚 Render Deployment Documentation</div>
+                    <a href="https://render.com/docs" class="resource-link" target="_blank">https://render.com/docs</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- PHASE 8 -->
+        <div class="phase">
+            <div class="phase-header" style="background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);">
+                <h2>📊 Phase 8: API Documentation & Testing</h2>
+                <div class="duration">Week 19 | Duration: 1 week</div>
+            </div>
+
+            <div class="section">
+                <h3>🎯 Objectives</h3>
+                <ul>
+                    <li>Create comprehensive API documentation</li>
+                    <li>Set up automated testing workflows</li>
+                    <li>Prepare API for external consumption</li>
+                </ul>
+            </div>
+
+            <div class="kpi-box">
+                <h4>📊 Key Performance Indicators (KPIs)</h4>
+                <ul>
+                    <li>Complete documentation for all endpoints</li>
+                    <li>Create Postman collection with 50+ requests</li>
+                    <li>Achieve 90%+ test coverage</li>
+                    <li>Zero broken endpoints in production</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h3>✅ Week 19: Documentation & Testing</h3>
+                <ul>
+                    <li>Swagger/OpenAPI documentation</li>
+                    <li>API versioning strategies</li>
+                    <li>Postman collection creation</li>
+                    <li>API testing automation</li>
+                    <li>Performance testing</li>
+                    <li>Load testing with Locust</li>
+                    <li>API changelog maintenance</li>
+                </ul>
+
+                <div class="resource">
+                    <div class="resource-title">📺 API Documentation Best Practices</div>
+                    <a href="https://www.youtube.com/watch?v=YmhE-c2uVAE" class="resource-link" target="_blank">https://www.youtube.com/watch?v=YmhE-c2uVAE</a>
+                </div>
+
+                <div class="resource">
+                    <div class="resource-title">📺 Postman Tutorial - Full Course</div>
+                    <a href="https://www.youtube.com/watch?v=VywxIQ2ZXw4" class="resource-link" target="_blank">https://www.youtube.com/watch?v=VywxIQ2ZXw4</a>
+                </div>
+
+                <div class="resource">
+                    <div class="resource-title">📚 FastAPI Swagger Documentation</div>
+                    <a href="https://fastapi.tiangolo.com/tutorial/metadata/" class="resource-link" target="_blank">https://fastapi.tiangolo.com/tutorial/metadata/</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- PHASE 9 -->
+        <div class="phase">
+            <div class="phase-header" style="background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%);">
+                <h2>🏗️ Phase 9: ASD Support App - Project Build</h2>
+                <div class="duration">Weeks 20-24 | Duration: 5 weeks</div>
+            </div>
+
+            <div class="section">
+                <h3>🎯 Objectives</h3>
+                <ul>
+                    <li>Build complete backend for ASD Support App</li>
+                    <li>Integrate all AI features</li>
+                    <li>Implement advanced features and analytics</li>
+                </ul>
+            </div>
+
+            <div class="kpi-box">
+                <h4>📊 Key Performance Indicators (KPIs)</h4>
+                <ul>
+                    <li>Complete 100+ API endpoints</li>
+                    <li>All AI features working in production</li>
+                    <li>Dashboard with real-time analytics</li>
+                    <li>Response time under 200ms average</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h3>✅ Weeks 20-21: Core System Development</h3>
+                <ul>
+                    <li>User management system</li>
+                    <li>Parent/caregiver profiles</li>
+                    <li>Child profiles with ASD-specific data</li>
+                    <li>Session tracking and history</li>
+                    <li>Progress monitoring system</li>
+                    <li>Settings and preferences</li>
+                </ul>
+
+                <div class="arabic-channels">
+                    <h4>📺 قنوات عربية موصى بها</h4>
+                    <div class="resource">
+                        <div class="resource-title">Hassouna Academy - بناء مشاريع كاملة</div>
+                        <a href="https://www.youtube.com/@HassounaAcademy" class="resource-link" target="_blank">https://www.youtube.com/@HassounaAcademy</a>
+                    </div>
+                </div>
+
+                <div class="resource">
+                    <div class="resource-title">📺 Building Full Stack Applications by Tech With Tim</div>
+                    <a href="https://www.youtube.com/@TechWithTim" class="resource-link" target="_blank">https://www.youtube.com/@TechWithTim</a>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3>✅ Week 22: AI Features Integration</h3>
+                <ul>
+                    <li>Social scenario analysis endpoint</li>
+                    <li>Emotion recognition API</li>
+                    <li>Facial expression detection</li>
+                    <li>Speech analysis integration</li>
+                    <li>Behavioral pattern recognition</li>
+                    <li>Personalized recommendations engine</li>
+                </ul>
+
+                <div class="resource">
+                    <div class="resource-title">📺 AI API Development</div>
+                    <a href="https://www.youtube.com/watch?v=GZvSYJDk-us" class="resource-link" target="_blank">https://www.youtube.com/watch?v=GZvSYJDk-us</a>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3>✅ Week 23: Advanced Features</h3>
+                <ul>
+                    <li>Progress tracking and visualization</li>
+                    <li>Custom learning paths</li>
+                    <li>Notification system</li>
+                    <li>Report generation</li>
+                    <li>Analytics dashboard backend</li>
+                    <li>Data export functionality</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h3>✅ Week 24: Optimization & Performance</h3>
+                <ul>
+                    <li>Database query optimization</li>
+                    <li>Caching strategies (Redis)</li>
+                    <li>API response optimization</li>
+                    <li>Background job processing</li>
+                    <li>Memory and resource management</li>
+                    <li>Load balancing setup</li>
+                </ul>
+
+                <div class="resource">
+                    <div class="resource-title">📺 Redis Caching Tutorial</div>
+                    <a href="https://www.youtube.com/watch?v=jgpVdJB2sKQ" class="resource-link" target="_blank">https://www.youtube.com/watch?v=jgpVdJB2sKQ</a>
+                </div>
+
+                <div class="resource">
+                    <div class="resource-title">📺 Performance Optimization by Amigoscode</div>
+                    <a href="https://www.youtube.com/@amigoscode" class="resource-link" target="_blank">https://www.youtube.com/@amigoscode</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- PHASE 10 -->
+        <div class="phase">
+            <div class="phase-header" style="background: linear-gradient(135deg, #ff6e7f 0%, #bfe9ff 100%);">
+                <h2>✅ Phase 10: Launch Preparation</h2>
+                <div class="duration">Weeks 25-26 | Duration: 2 weeks</div>
+            </div>
+
+            <div class="section">
+                <h3>🎯 Objectives</h3>
+                <ul>
+                    <li>Comprehensive testing and QA</li>
+                    <li>Security audit and hardening</li>
+                    <li>Production deployment and monitoring</li>
+                </ul>
+            </div>
+
+            <div class="kpi-box">
+                <h4>📊 Key Performance Indicators (KPIs)</h4>
+                <ul>
+                    <li>Pass all security audits</li>
+                    <li>Zero critical bugs in production</li>
+                    <li>100% endpoint functionality</li>
+                    <li>Monitoring and alerting active</li>
+                    <li>Documentation 100% complete</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h3>✅ Week 25: Comprehensive Testing</h3>
+                <ul>
+                    <li>Unit testing for all components</li>
+                    <li>Integration testing</li>
+                    <li>End-to-end testing</li>
+                    <li>Security penetration testing</li>
+                    <li>Load and stress testing</li>
+                    <li>User acceptance testing (UAT)</li>
+                    <li>Bug fixing and refinement</li>
+                </ul>
+
+                <div class="arabic-channels">
+                    <h4>📺 قنوات عربية موصى بها</h4>
+                    <div class="resource">
+                        <div class="resource-title">Algorithm Academy - Software Testing</div>
+                        <a href="https://www.youtube.com/@algorithm.academy" class="resource-link" target="_blank">https://www.youtube.com/@algorithm.academy</a>
+                    </div>
+                </div>
+
+                <div class="resource">
+                    <div class="resource-title">📺 Software Testing Tutorial</div>
+                    <a href="https://www.youtube.com/watch?v=Jv2uxzhPFl4" class="resource-link" target="_blank">https://www.youtube.com/watch?v=Jv2uxzhPFl4</a>
+                </div>
+
+                <div class="resource">
+                    <div class="resource-title">📺 Security Testing for APIs</div>
+                    <a href="https://www.youtube.com/watch?v=l0ISDMUpm68" class="resource-link" target="_blank">https://www.youtube.com/watch?v=l0ISDMUpm68</a>
+                </div>
+            </div>
+
+            <div class="section">
+                
